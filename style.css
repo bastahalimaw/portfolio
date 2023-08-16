@@ -85,7 +85,7 @@ header {
   }
 
 .home-content .name {
-  color: white;
+  color: #25b79f;
   width: 100%;
   text-align: center;
 }
@@ -111,7 +111,7 @@ header {
 }
 
 .home-content .name p {
-  color: #f0f0e6;
+  color: #25b79f;
   font-size: 1.5rem;
 }
 
