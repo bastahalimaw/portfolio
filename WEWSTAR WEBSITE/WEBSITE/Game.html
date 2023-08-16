@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+			<link rel="stylesheet" href="game.css">
+		<style>
+button{
+	padding: 20px;
+	border: none;
+	 background: #0009;
+	font-size: 30px;
+	color: white;
+	position: absolute;
+	top: 45%;
+}
+.next{
+	border-radius: 10px 0px 0px 10px;
+	margin-left: 944px;
+}
+		</style>
+	</head>
+	<body style="background-color: #191919">
+		<ul>
+			<img src="logo.png" class="log">
+			<li><a href="about.html">About</a></li>
+			<li><a href="news.html">News</a></li>
+			<li><a class="active" href="Game.html">Games</a></li>
+			<li><a href="wewstar.html">Home</a></li>
+		</ul>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+			<h1>
+				Hot & Featured Games
+			</h1>
+	</body>
+	
+	<body>
+		<div id="slider" style="z-index:-1;">
+			<div id="box">
+				<img src="aa.jpg">
+		</div>
+		<button class="prew" onclick="prewImage()"> &laquo; </button>
+		<button class="next" onclick="nextImage()"> &raquo; </button>
+		</div>
+		<script type="text/javascript">
+			var slider_content = document.getElementById('box')
+
+			// contain images in an array
+
+			var image = ['aa','bb','cc','dd','ee','ff','gg'];
+
+			var i = image.length;
+
+			// function for next slide
+
+			function nextImage(){
+				if (i<image.length) {
+					i= i+1;
+				}else{
+					i = 1;
+				}
+					slider_content.innerHTML ="<img src="+image[i-1]+".jpg>";
+			}
+
+			// function for prew slide
+
+			function prewImage(){
+				if (i<image.length+1 && i>1) {
+					i= i-1;					
+				}else{
+					i = image.length;
+				}
+					slider_content.innerHTML = "<img src="+image[i-1]+".jpg>";
+			}
+
+
+			// script for auto image slider
+
+			setInterval(nextImage , 1550);
+		</script>
+		<h1>Other Games</h1>
+		<table align="center">
+			<tr>
+				<td><a href="https://www.ea.com/games/apex-legends">
+				<abbr title="Apex Legends">
+					<img id="image" src="apexx.jpg" height="500px" width="250px";></a>
+				</abbr>
+				</td>
+				<td colspan="2" background-color: #0009;>
+					<h2><u><b>Apex Legends</b></u></h2> is a character-driven, squad-based Battle Royale <br>
+					              shooter where teamwork is the difference between <br>
+					              victory and defeat.
+
+					 <p class="click">
+    					(Click the image for more Info)
+    				 </p>
+				</td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td><a href="https://www.callofduty.com/modernwarfare">
+					<abbr title="Call of Duty">
+					<img id="image" src="CODd.jpg"></a>
+					</abbr>
+				</td>
+				<td colspan="2" background-color: #0009;>
+					<h2><u> <b> Call of Duty:Modern Warfare</b></u></h2>The iconic first-person shooter game is back! <br>
+								Cross play, free maps and modes, and new engine deliver the <br>
+								largest technical leap in Call of Duty history.<br>
+
+					<p class="click">
+    					(Click the image for more Info)
+    				 </p>
+				</td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td><a href="http://www.devilmaycry5.com/us/">
+					<abbr title="Devils May Cry">
+					<img id="image" src="DMCc.jpg"></a>
+					</abbr>
+				</td>
+				<td colspan="2" background-color: #0009;>
+					<h2><u> <b> Devil May Cry 5</u> </b></h2>is an action-adventure hack and slash <br>
+											video game developed and published by Capcom.
+
+					<p class="click">
+    					(Click the image for more Info)
+    				 </p>
+				</td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td><a href="http://blog.dota2.com/?l=english">
+					<abbr title="Dota 2">
+					<img id="image" src="dota22.jpg"></a>
+					</abbr>
+				</td>
+				<td colspan="2" background-color: #0009;>
+					<h2><u> <b> DOTA 2</u> </b></h2>is a multiplayer online battle arena (MOBA) video game <br>
+					in which two teams of five players compete to collectively destroy <br>
+					a large structure defended by the opposing team known as the "Ancient", <br>
+					whilst defending their own.
+
+					<p class="click">
+    					(Click the image for more Info)
+    				 </p>
+				</td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td><a href="https://www.epicgames.com/fortnite/en-US/home">
+					<abbr title="Fortnite">
+					<img id="image" src="fortnitee.jpg"></a>
+					</abbr>
+				</td>
+				<td colspan="2" background-color: #0009;>
+					<h2><u> <b> Fortnite</u> </b></h2>is a survival game where 100 players fight against each other<br>
+					 in player versus player combat to be the last one standing. <br>
+					 It is a fast-paced, action-packed game
+
+					 <p class="click">
+    					(Click the image for more Info)
+    				 </p>
+				</td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td><a href="https://www.rockstargames.com/games/info/V">
+					<abbr title="Grand Theft Auto 5">
+					<img id="image" src="gta55.jpg"></a>
+					</abbr>
+				</td>
+				<td colspan="2" background-color: #0009;>
+					<h2><u> <b> GTA 5</u> </b></u></h2> Grand Theft Auto V is an action-adventure game played from either a <br>third-person or first-person perspective. Players complete missions—linear scenarios with <br>set objectives—to progress through the story. Outside of the missions,<br> players may freely roam the open world.
+
+					<p class="click">
+    					(Click the image for more Info)
+    				 </p>
+				</td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td><a href="https://lol.garena.ph/">
+					<abbr title="League of Legends">
+					<img id="image" src="LoLl.jpg"></a>
+					</abbr>
+				</td>
+				<td colspan="2" background-color: #0009;>
+					<h2><u> <b> League of Legends</u></b></h2> League of Legends is a team-based strategy game <br>where two teams of five powerful champions face off to destroy the other's base.<br> Choose from over 140 champions to make epic plays, secure kills, <br>and take down towers as you battle your way to victory.
+
+					<p class="click">
+    					(Click the image for more Info)
+    				 </p>
+				</td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td><a href="https://www.mortalkombat.com/game-info">
+					<abbr title="Mortal Combat">
+					<img id="image" src="mortalcombatt.jpg"></a>
+					</abbr>
+				</td>
+				<td colspan="2" background-color: #0009;>
+					<h2><u> <b> Mortal Combat 11</u> </b></h2> Like the previous two games in the series, <br>Mortal Kombat 11 is a 2.5D fighting game. Alongside the returning Fatalities and Brutalities,<br> new gameplay features are introduced, such as Fatal Blows and Krushing Blows. <br>Fatal Blows are special moves similar to the X-ray moves in Mortal Kombat X.
+
+					<p class="click">
+    					(Click the image for more Info)
+    				 </p>
+				</td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td><a href="https://playoverwatch.com/en-us/">
+					<abbr title="Overwatch">
+					<img id="image" src="overwatchh.jpg"></a>
+					</abbr>
+				</td>
+				<td colspan="2" background-color: #0009;>
+					<h2><u> <b> Overwatch</u> </b></h2>Overwatch is a colorful team-based shooter game starring<br> a diverse cast of powerful heroes. Travel the world, build a team, <br>and contest objectives in exhilarating 6v6 combat.
+
+					<p class="click">
+    					(Click the image for more Info)
+    				 </p>
+				</td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td><a href="https://www.rockstargames.com/reddeadredemption2/">
+					<abbr title="Red Dead Redemption">
+					<img id="image" src="RDRr.jpg"></a>
+					</abbr>
+				</td>
+				<td colspan="2" background-color: #0009;>
+					<h2><u> <b> Red Dead Redemption 2</u> </b></h2>Red Dead Redemption 2 is a western action-adventure<br> game set in an open world environment and played from a third-person perspective,<br> featuring single-player and online multiplayer components. <br>The game has new features absent from the previous game.
+
+					<p class="click">
+    					(Click the image for more Info)
+    				 </p>
+				</td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td><a href="https://summertimesaga.com/">
+					<abbr title="Summertime Saga">
+					<img id="image" src="summertimee.jpeg"></a>
+					</abbr>
+				</td>
+				<td colspan="2" background-color: #0009;>
+					<h2><u> <b> Summertime Saga</u> </b></h2>Summertime Saga is an explicit dating simulator and visual <br>novel style game which follows the male protagonist as he tries to find the truth behind <br>his fathers recent death while juggling school, his finances, and trying to get a date. <br>This game is explicit and features sexual acts and content.
+
+					<p class="click">
+    					(Click the image for more Info)
+    				 </p>
+				</td>
+				<td> </td>
+			</tr>
+		</table>
+	</body>
+
+</html>
